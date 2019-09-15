@@ -1,0 +1,35 @@
+{
+  "name": "yarn-typescript-webpack-express-starter",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/bundle.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn clear && tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "webpack",
+    "postbuild": "yarn test",
+    "prestart": "yarn build",
+    "start": "node .",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "dev": "tsc",
+    "postdev": "node dist/index.js",
+    "clear": "rm -r dist/* || true"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/express": "^4.17.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.5",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "ts-loader": "^6.1.0",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  }
+}
