@@ -1,6 +1,6 @@
 # Yarn TypeScript Webpack Express Starter
 ## What is this?
-This is a template for deveopment of an Express API with TypeScript and bundling through webpack.
+This is a template for development of an Express API with TypeScript and bundling through webpack.
 Code is written in JS/TS and tested with mocha and chai. For deployments, a single `bundle.js` is created with webpack.
 The `package.json` does already contain some useful scripts.
 
