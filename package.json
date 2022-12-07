@@ -16,7 +16,7 @@
     "clear": "rm -r dist/* || true"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@types/chai": "^4.2.9",
